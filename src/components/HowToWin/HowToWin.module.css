@@ -1,0 +1,8 @@
+#popUp {
+    animation: fade-in 300ms forwards;
+    animation-timing-function: fade-in 300ms;
+  }
+
+  #popUp[open] {
+    animation:fade-in 300ms forwards;
+  }
