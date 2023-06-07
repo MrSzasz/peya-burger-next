@@ -29,7 +29,10 @@ module.exports = {
         'peya-soft-blue': '0px 0px 90px 5px rgba(28, 155, 212, 0.2)'
       },
       gridTemplateColumns: {
-        "travel": "auto 65%"
+        "travel": "auto 65%",
+      },
+      gridTemplateRows: {
+        "main-page": "min-content 1fr min-content"
       },
       fontFamily: {
         'texta': ['Texta'],

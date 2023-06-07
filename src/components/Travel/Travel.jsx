@@ -8,7 +8,7 @@ const Travel = () => {
         <p className="text-xl lg:text-2xl leading-[1em]">
           a conocer las{" "}
           <span className="font-texta-bold">
-          hamburgueserías mejores rankeadas
+            hamburgueserías mejores rankeadas
           </span>{" "}
           de Manhattan. <br />Y disfrutá de todo esto:
         </p>
