@@ -1,9 +1,9 @@
-const Footer = () => {
+const Footer = ({ footerTitle }) => {
   return (
     <footer className="bg-peya-red px-4 lg:px-peya-x py-8 lg:py-16 flex flex-col items-center justify-evenly gap-10 lg:gap-20 h-fit">
       <div className="flex flex-col justify-center items-center gap-8">
         <h3 className="font-texta-bold text-peya-white text-3xl lg:text-4xl tracking-wide">
-          Descargá la app
+          {footerTitle}
         </h3>
         <div className="flex justify-center items-center gap-4">
           <a

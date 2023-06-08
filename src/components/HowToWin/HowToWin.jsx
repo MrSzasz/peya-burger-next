@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import HowToWinCard from "../HowToWinCard/HowToWinCard";
 
-const HowToWin = () => {
+const HowToWin = ({ howToWinDict }) => {
   useEffect(() => {
     const popUp = document.querySelector("#popUp");
 
@@ -29,22 +29,18 @@ const HowToWin = () => {
         <div className="text-center flex flex-col items-center gap-4 lg:gap-8">
           <div className="flex flex-col gap-2">
             <h3 className="text-peya-blue font-texta-bold text-3xl lg:text-4xl">
-              Pagá con Visa en PedidosYa y participá
+              {howToWinDict.title}
             </h3>
-            <p className="text-lg lg:text-xl">
-              Y empezá a viajar antes de viajar
-            </p>
+            <p className="text-lg lg:text-xl">{howToWinDict.subtitle}</p>
           </div>
           <div className="text-center text-lg lg:text-xl text-peya-white p-4 lg:p-8 bg-peya-blue flex flex-col gap-2">
-            <p>Acumulá oportunidades desde el 13/6 hasta 31/7</p>
-            <p className="font-texta-bold">
-              El sorteo se realizará el 2 de agosto de 2023
-            </p>
+            <p>{howToWinDict.dates.firstLine}</p>
+            <p className="font-texta-bold">{howToWinDict.dates.secondLine}</p>
           </div>
         </div>
         <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-16 mb-12">
           <p className="font-texta-bold text-xl text-center lg:text-left lg:text-2xl">
-            Empezá ya a sumar oportunidades
+            {howToWinDict.buttonTitle}
           </p>
           <button
             onClick={() => {
@@ -64,27 +60,22 @@ const HowToWin = () => {
           </a>
         </div>
         <div className="flex flex-col lg:flex-row justify-center gap-14 lg:gap-8">
-          <HowToWinCard
-            num={10}
-            text={
-              "¡Acelerá tus oportunidades! Por tus compras mayores a $7.500 sumas 10 oportunidades"
-            }
-          />
+          <HowToWinCard num={10} text={howToWinDict.opportunities.plusTen} />
           <HowToWinCard
             num={5}
             text={[
-              "Por cada compra en ",
+              howToWinDict.opportunities.plusFive.firstLine,
               <img
                 className="h-5 lg:h-6"
                 src="/images/howToWin/pedidosYaMarketLogo.svg"
               />,
-              " Kioscos, Farmacias, Mascotas, Tiendas, Bebidas y Envíos",
+              howToWinDict.opportunities.plusFive.secondLine,
             ]}
           />
           <HowToWinCard
             num={1}
             text={[
-              "Por tus compras en Restaurantes y  Café y Deli en ",
+              howToWinDict.opportunities.plusOne,
               <img
                 className="h-5 lg:h-6"
                 src="/images/hero/pedidosYaLogo.svg"
@@ -99,7 +90,7 @@ const HowToWin = () => {
       >
         <div className="flex flex-col justify-center items-center gap-2">
           <h2 className="text-peya-blue font-texta-bold text-4xl">
-            Descargá la app
+            {howToWinDict.appDownload}
           </h2>
           <img src="/images/howToWin/qr.png" alt="" className="w-72 h-72" />
           <button

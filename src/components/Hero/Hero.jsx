@@ -1,4 +1,4 @@
-const Hero = () => {
+const Hero = ({ heroTitle }) => {
   return (
     <section>
       <div className="relative flex flex-col lg:flex-row justify-center">
@@ -8,8 +8,7 @@ const Hero = () => {
             className="w-[15em] lg:w-[25em] mx-auto lg:mx-0"
           />
           <h2 className="font-texta-bold text-peya-blue text-xl lg:text-2xl leading-6 text-center lg:text-left lg:w-[75%]">
-            Pagá con Visa en PedidosYa y ganá un viaje a New York a probar las
-            mejores hamburguesas de Manhattan.
+            {heroTitle}
           </h2>
         </div>
         <div className="lg:w-[45%] w-[90%] mx-auto lg:mx-0 relative lg:h-[40vw] pb-12">
