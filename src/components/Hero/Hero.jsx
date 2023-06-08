@@ -7,7 +7,7 @@ const Hero = ({ heroTitle }) => {
             src="/images/hero/title.svg"
             className="w-[15em] lg:w-[25em] mx-auto lg:mx-0"
           />
-          <h2 className="font-texta-bold text-peya-blue text-xl lg:text-2xl leading-6 text-center lg:text-left lg:w-[75%]">
+          <h2 className="font-texta-bold text-peya-blue text-2xl leading-6 text-center lg:text-left lg:w-[75%]">
             {heroTitle}
           </h2>
         </div>
@@ -23,7 +23,7 @@ const Hero = ({ heroTitle }) => {
         />
       </div>
       <div className="bg-peya-red flex justify-end py-4 px-4">
-        <img src="/images/hero/pedidosYaLogo.svg" className="w-20 lg:w-32" />
+        <img src="/images/hero/pedidosYaLogo.svg" className="w-28 lg:w-32" />
       </div>
     </section>
   );

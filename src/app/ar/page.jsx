@@ -1,5 +1,10 @@
 import MainBase from "@/components/MainBase/MainBase";
 
+export const metadata = {
+  title: "Viajá a New York | Argentina",
+  description: "En PedidosYa pagá con Visa y ganá",
+};
+
 const index = () => {
   return (
     <MainBase
@@ -11,7 +16,6 @@ const index = () => {
             firstLine: "a conocer las",
             secondLine: "hamburgueserías mejores rankeadas",
             thirdLine: "de Manhattan.",
-            fourthLine: "Y disfrutá de todo esto:",
           },
           bullets: [
             "Vuelo ida y vuelta a New York para 2 personas.",
@@ -24,19 +28,19 @@ const index = () => {
           title: "Pagá con Visa en PedidosYa y participá",
           subtitle: "Y empezá a viajar antes de viajar",
           dates: {
-            firstLine: "Acumulá oportunidades desde el 13/6 hasta 31/7",
-            secondLine: "El sorteo se realizará el 2 de agosto de 2023",
+            firstLine: "Acumulá chances desde el 13/6 hasta 31/7",
+            secondLine: "El sorteo se realizará el 3 de agosto de 2023",
           },
-          buttonTitle: "Empezá ya a sumar oportunidades",
+          buttonTitle: "Empezá ya a sumar chances",
           opportunities: {
             plusTen:
-              "¡Acelerá tus oportunidades! Por tus compras mayores a $7.500 sumas 10 oportunidades",
+              "¡Acelerá tus chances! Tus compras mayores a $7.500 suman más",
             plusFive: {
-              firstLine: "Por cada compra en",
+              firstLine: "Por tus compras en",
               secondLine:
                 "Kioscos, Farmacias, Mascotas, Tiendas, Bebidas y Envíos",
             },
-            plusOne: "Por tus compras en Restaurantes y Café y Deli en ",
+            plusOne: "Por tus compras en Restaurantes dentro de  ",
           },
           appDownload: "Descargá la app",
         },

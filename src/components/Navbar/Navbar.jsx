@@ -12,21 +12,21 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center p-4 text-white bg-peya-blue lg:h-16">
+    <nav className="flex justify-between items-center p-6 px-4 text-white bg-peya-blue lg:h-16">
       <div className="flex justify-center items-center gap-2 lg:hidden">
         <img
           src="/images/navbar/pedidosYaPagosLogoMobile.svg"
-          className="w-14 lg:w-48 lg:hidden"
+          className="w-28 lg:w-48 lg:hidden"
           alt=""
         />
         |
         <img
           src="/images/navbar/visaLogo.svg"
-          className="w-12 lg:w-24"
+          className="w-18 lg:w-24"
           alt=""
         />
       </div>
-      <button className="lg:hidden text-2xl" onClick={toggleNav}>
+      <button className="lg:hidden text-4xl" onClick={toggleNav}>
         <AiOutlineMenu />
       </button>
       <div className="justify-center items-center gap-2 lg:gap-24 hidden lg:flex">
@@ -69,9 +69,9 @@ const Navbar = () => {
       />
       <ul
         id="hiddenNav"
-        className="fixed w-screen h-screen top-0 left-0 hidden bg-peya-blue flex-col justify-center items-center gap-16 text-2xl font-texta-bold z-10"
+        className="fixed w-screen h-screen top-0 left-0 hidden bg-peya-blue flex-col justify-center items-center gap-20 text-3xl font-texta-bold z-10"
       >
-        <button className="absolute top-3 right-5" onClick={toggleNav}>
+        <button className="absolute text-4xl top-3 right-5" onClick={toggleNav}>
           X
         </button>
         <li

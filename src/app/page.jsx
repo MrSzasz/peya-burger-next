@@ -1,6 +1,5 @@
 import Link from "next/link";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
-
 export default function Home() {
   return (
     <section className="min-h-screen grid grid-rows-main-page font-texta">

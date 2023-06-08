@@ -31,15 +31,15 @@ const HowToWin = ({ howToWinDict }) => {
             <h3 className="text-peya-blue font-texta-bold text-3xl lg:text-4xl">
               {howToWinDict.title}
             </h3>
-            <p className="text-lg lg:text-xl">{howToWinDict.subtitle}</p>
+            <p className="text-xl">{howToWinDict.subtitle}</p>
           </div>
-          <div className="text-center text-lg lg:text-xl text-peya-white p-4 lg:p-8 bg-peya-blue flex flex-col gap-2">
+          <div className="text-center text-xl text-peya-white p-4 lg:p-8 bg-peya-blue flex flex-col gap-2">
             <p>{howToWinDict.dates.firstLine}</p>
             <p className="font-texta-bold">{howToWinDict.dates.secondLine}</p>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-16 mb-12">
-          <p className="font-texta-bold text-xl text-center lg:text-left lg:text-2xl">
+        <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-16 mb-28 lg:mb-20">
+          <p className="font-texta-bold text-2xl text-center lg:text-left">
             {howToWinDict.buttonTitle}
           </p>
           <button
@@ -59,14 +59,14 @@ const HowToWin = ({ howToWinDict }) => {
             Pedir Ya
           </a>
         </div>
-        <div className="flex flex-col lg:flex-row justify-center gap-14 lg:gap-8">
+        <div className="flex flex-col lg:flex-row justify-center gap-28 lg:gap-8">
           <HowToWinCard num={10} text={howToWinDict.opportunities.plusTen} />
           <HowToWinCard
             num={5}
             text={[
               howToWinDict.opportunities.plusFive.firstLine,
               <img
-                className="h-5 lg:h-6"
+                className="h-6"
                 src="/images/howToWin/pedidosYaMarketLogo.svg"
               />,
               howToWinDict.opportunities.plusFive.secondLine,
@@ -77,7 +77,7 @@ const HowToWin = ({ howToWinDict }) => {
             text={[
               howToWinDict.opportunities.plusOne,
               <img
-                className="h-5 lg:h-6"
+                className="h-6"
                 src="/images/hero/pedidosYaLogo.svg"
               />,
             ]}
