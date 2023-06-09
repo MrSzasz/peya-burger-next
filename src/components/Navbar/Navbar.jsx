@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center p-6 px-4 text-white bg-peya-blue lg:h-16">
+    <nav className="flex justify-between items-center p-6 px-4 text-white bg-peya-blue z-10 lg:h-16">
       <div className="flex justify-center items-center gap-2 lg:hidden">
         <img
           src="/images/navbar/pedidosYaPagosLogoMobile.svg"
@@ -69,7 +69,7 @@ const Navbar = () => {
       />
       <ul
         id="hiddenNav"
-        className="fixed w-screen h-screen top-0 left-0 hidden bg-peya-blue flex-col justify-center items-center gap-20 text-3xl font-texta-bold z-10"
+        className="fixed w-screen h-screen top-0 left-0 hidden bg-peya-blue flex-col justify-center items-center gap-20 text-3xl font-texta-bold z-50"
       >
         <button className="absolute text-4xl top-3 right-5" onClick={toggleNav}>
           X

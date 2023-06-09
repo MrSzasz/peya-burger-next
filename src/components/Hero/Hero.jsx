@@ -38,8 +38,8 @@ const Hero = ({ heroTitle }) => {
         </motion.div>
         <div className="lg:w-[45%] w-[90%] mx-auto lg:mx-0 relative lg:h-[40vw] pb-12">
           <img
-            src="/images/hero/heroMainImage.webp"
-            className="lg:absolute -bottom-10 animate-soft-bounce"
+            src="/images/hero/heroMainImageWithShadow.webp"
+            className="lg:absolute -bottom-10 animate-soft-bounce z-20"
           />
         </div>
         <img

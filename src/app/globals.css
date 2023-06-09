@@ -45,6 +45,7 @@ html {
 section {
     min-height: 90vh;
     height: fit-content;
+    overflow-x: hidden;
 }
 
 @media only screen and (max-width: 1024px) {

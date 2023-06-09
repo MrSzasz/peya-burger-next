@@ -25,7 +25,7 @@ const index = () => {
           ],
         },
         howToWin: {
-          title: "Pagá con Visa en PedidosYa y participá",
+          title: "En PedidosYa pagá con Visa",
           subtitle: "Y empezá a viajar antes de viajar",
           dates: {
             firstLine: "Acumulá chances desde el 13/6 hasta 31/7",
