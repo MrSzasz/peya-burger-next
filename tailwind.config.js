@@ -40,6 +40,20 @@ module.exports = {
         'texta-bolder': ['Texta-Bolder'],
         'texta-italic-bold': ['Texta-Bold-Italic'],
       },
+      keyframes: {
+        'up-and-down': {
+          '0%': {
+            transform: 'translateY(-5px)'
+          },
+
+          '100%': {
+            transform: 'translateY(5px)'
+          }
+        }
+      },
+      animation: {
+        'soft-bounce': 'up-and-down 1.5s infinite alternate',
+      }
     },
   },
   plugins: [],

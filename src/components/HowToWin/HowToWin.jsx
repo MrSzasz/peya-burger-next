@@ -2,8 +2,28 @@
 
 import { useEffect } from "react";
 import HowToWinCard from "../HowToWinCard/HowToWinCard";
+import { motion } from "framer-motion";
 
 const HowToWin = ({ howToWinDict }) => {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.5,
+        duration: 1,
+        type: "tween",
+        damping: 25,
+        stiffness: 500,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, transform: "translateY(+50%)" },
+    show: { opacity: 1, transform: "translateY(0)" },
+  };
+
   useEffect(() => {
     const popUp = document.querySelector("#popUp");
 
@@ -21,7 +41,23 @@ const HowToWin = ({ howToWinDict }) => {
   }, []);
 
   return (
-    <section
+    <motion.section
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+        transition: {
+          duration: 1,
+          type: "tween",
+          damping: 25,
+          stiffness: 500,
+        },
+      }}
+      viewport={{ once: true }}
+      exit={{
+        opacity: 1,
+      }}
       id="howToWinSection"
       className="lg:px-peya-x p-4 w-full flex justify-center items-center"
     >
@@ -42,7 +78,7 @@ const HowToWin = ({ howToWinDict }) => {
           <p className="font-texta-bold text-2xl text-center lg:text-left">
             {howToWinDict.buttonTitle}
           </p>
-          <button
+          {/* <button
             onClick={() => {
               const popUp = document.querySelector("#popUp");
               popUp.showModal();
@@ -50,39 +86,48 @@ const HowToWin = ({ howToWinDict }) => {
             className="bg-peya-red hidden lg:block transition-all hover:bg-peya-red-hover rounded-full px-10 py-2 font-bold text-peya-white"
           >
             Pedir Ya
-          </button>
+          </button> */}
           <a
             href="https://www.google.com/"
             target="_blank"
-            className="bg-peya-red lg:hidden transition-all hover:bg-peya-red-hover rounded-full px-10 py-2 font-bold text-peya-white"
+            className="bg-peya-red transition-all hover:bg-peya-red-hover rounded-full px-10 py-2 font-bold text-peya-white"
           >
             Pedir Ya
           </a>
         </div>
-        <div className="flex flex-col lg:flex-row justify-center gap-28 lg:gap-8">
-          <HowToWinCard num={10} text={howToWinDict.opportunities.plusTen} />
-          <HowToWinCard
-            num={5}
-            text={[
-              howToWinDict.opportunities.plusFive.firstLine,
-              <img
-                className="h-6"
-                src="/images/howToWin/pedidosYaMarketLogo.svg"
-              />,
-              howToWinDict.opportunities.plusFive.secondLine,
-            ]}
-          />
-          <HowToWinCard
-            num={1}
-            text={[
-              howToWinDict.opportunities.plusOne,
-              <img
-                className="h-6"
-                src="/images/hero/pedidosYaLogo.svg"
-              />,
-            ]}
-          />
-        </div>
+        <motion.div
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="flex flex-col lg:flex-row justify-center gap-28 lg:gap-8"
+        >
+          <motion.div variants={item}>
+            <HowToWinCard num={10} text={howToWinDict.opportunities.plusTen} />
+          </motion.div>
+          <motion.div variants={item}>
+            <HowToWinCard
+              num={5}
+              text={[
+                howToWinDict.opportunities.plusFive.firstLine,
+                <img
+                  className="h-6"
+                  src="/images/howToWin/pedidosYaMarketLogo.svg"
+                />,
+                howToWinDict.opportunities.plusFive.secondLine,
+              ]}
+            />
+          </motion.div>
+          <motion.div variants={item}>
+            <HowToWinCard
+              num={1}
+              text={[
+                howToWinDict.opportunities.plusOne,
+                <img className="h-6" src="/images/hero/pedidosYaLogo.svg" />,
+              ]}
+            />
+          </motion.div>
+        </motion.div>
       </div>
       <dialog
         id="popUp"
@@ -104,7 +149,7 @@ const HowToWin = ({ howToWinDict }) => {
           </button>
         </div>
       </dialog>
-    </section>
+    </motion.section>
   );
 };
 

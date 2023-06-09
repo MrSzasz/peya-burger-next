@@ -1,8 +1,33 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 const Hero = ({ heroTitle }) => {
   return (
     <section>
       <div className="relative flex flex-col lg:flex-row justify-center">
-        <div className="lg:w-[35%] h-[75%] flex flex-col gap-4 p-4 lg:pt-16">
+        <motion.div
+          initial={{
+            transform: "translateX(-100%)",
+            opacity: 0,
+          }}
+          whileInView={{
+            transform: "translateX(0%)",
+            opacity: 1,
+            transition: {
+              duration: 1,
+              type: "tween",
+              damping: 25,
+              stiffness: 500,
+            },
+          }}
+          viewport={{ once: true }}
+          exit={{
+            transform: "translateX(0%)",
+            opacity: 1,
+          }}
+          className="lg:w-[35%] h-[75%] flex flex-col gap-4 p-4 lg:pt-16"
+        >
           <img
             src="/images/hero/title.svg"
             className="w-[15em] lg:w-[25em] mx-auto lg:mx-0"
@@ -10,11 +35,11 @@ const Hero = ({ heroTitle }) => {
           <h2 className="font-texta-bold text-peya-blue text-2xl leading-6 text-center lg:text-left lg:w-[75%]">
             {heroTitle}
           </h2>
-        </div>
+        </motion.div>
         <div className="lg:w-[45%] w-[90%] mx-auto lg:mx-0 relative lg:h-[40vw] pb-12">
           <img
             src="/images/hero/heroMainImage.webp"
-            className="lg:absolute -bottom-10"
+            className="lg:absolute -bottom-10 animate-soft-bounce"
           />
         </div>
         <img
