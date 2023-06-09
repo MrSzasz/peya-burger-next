@@ -59,7 +59,7 @@ const HowToWin = ({ howToWinDict }) => {
         opacity: 1,
       }}
       id="howToWinSection"
-      className="lg:px-peya-x p-4 w-full flex justify-center items-center"
+      className="lg:px-peya-x p-4 w-full flex justify-center items-center overflow-y-hidden"
     >
       <div className="w-full lg:w-fit shadow-peya-soft-blue rounded-peya flex flex-col px-4 lg:px-peya-x py-8 items-center gap-4 lg:gap-8">
         <div className="text-center flex flex-col items-center gap-4 lg:gap-8">

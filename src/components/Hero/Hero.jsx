@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Hero = ({ heroTitle }) => {
   return (
-    <section>
+    <section className="overflow-x-visible">
       <div className="relative flex flex-col lg:flex-row justify-center">
         <motion.div
           initial={{
