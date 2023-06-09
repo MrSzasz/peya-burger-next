@@ -9,7 +9,7 @@ const MainBase = ({ dict }) => {
   return (
     <main className="font-texta">
       <Navbar />
-      <Hero heroTitle={dict.hero} />
+      <Hero heroData={dict.hero} />
       <Travel travelDict={dict.travel} />
       {/* <TutorialVideo /> */}
       <HowToWin howToWinDict={dict.howToWin} />

@@ -9,42 +9,48 @@ const index = () => {
   return (
     <MainBase
       dict={{
-        hero: "Pagá con Visa en PedidosYa y ganá un viaje a New York a probar las mejores hamburguesas de Manhattan.",
+        hero: {
+          title:
+            "Paga con Visa en PedidosYa y gana un viaje a New York a probar las mejores hamburguesas de Manhattan.",
+          imageRegion: "Pe",
+        },
         travel: {
-          title: "Ganate un viaje a Nueva York",
-          subtitle: {
-            firstLine: "a conocer las",
-            secondLine: "hamburgueserías mejores rankeadas",
-            thirdLine: "de Manhattan.",
-          },
+          title: "Gánate un viaje a Nueva York",
+          subtitle: "y prueba hamburguesas en Manhattan",
           bullets: [
-            "Vuelo ida y vuelta a New York para 2 personas.",
-            "4 noches en Hotel 4 estrellas.",
-            "Tour gastronómico por las mejores Hamburgueserías de Manhattan.",
-            "Excursiones diarias, y mucho más!",
+            "Viaje para 2 personas",
+            "Vuelos ida y regreso a New York",
+            "6 noches de estadía en hotel 4 estrellas",
           ],
         },
         howToWin: {
-          title: "En PedidosYa pagá con Visa",
-          subtitle: "Y empezá a viajar antes de viajar",
+          title: "En PedidosYa paga con Visa",
+          subtitle: "Y empieza a viajar antes de viajar",
           dates: {
-            firstLine: "Acumulá chances desde el 13/6 hasta 31/7",
-            secondLine: "El sorteo se realizará el 3 de agosto de 2023",
+            firstLine:
+              "Acumula oportunidades desde el 13/6/2023 hasta el 31/7/2023",
+            secondLine: "El sorteo se realizará el 3/8/2023",
           },
-          buttonTitle: "Empezá ya a sumar chances",
+          buttonTitle: "Empieza ya a sumar oportunidades",
           opportunities: {
-            plusTen:
-              "¡Acelerá tus chances! Tus compras mayores a $7.500 suman más",
-            plusFive: {
-              firstLine: "Por tus compras en",
-              secondLine:
-                "Kioscos, Farmacias, Mascotas, Tiendas, Bebidas y Envíos",
+            span: "¡Acelera tus oportunidades!",
+            plusTen: {
+              numTitle: "oportunidades",
+              text: "Tus pedidos mayores a s/40 suman más",
             },
-            plusOne: "Por tus compras en Restaurantes dentro de  ",
+            plusFive: {
+              numTitle: "oportunidades",
+              text: "Por tus pedidos en Restaurantes",
+            },
+            plusOne: {
+              numTitle: "oportunidad",
+              text: "Por tus pedidos en Mercados y tiendas",
+            },
           },
-          appDownload: "Descargá la app",
+          link: "https://pwdh.adj.st/?adjust_t=84samxj_ec0dled&adjust_campaign=other__other_mix_eat_ma_fintech_visa&adjust_deeplink=pedidosya%3A%2F%2Fwww.pedidosya.com.pe/&adjust_fallback=https%3A%2F%2Fwww.pedidosya.com.pe%2F%3F%26pycat%3Dother%26utm_source%3Dweb-referral%26utm_medium%3Dreferral%26utm_campaign%3Dother_other_mix_eat_ma_fintech_visa",
+          appDownload: "Descarga la app",
         },
-        footer: "Descargá la app",
+        footer: "Descarga la app",
       }}
     />
   );

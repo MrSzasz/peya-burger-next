@@ -9,19 +9,18 @@ const index = () => {
   return (
     <MainBase
       dict={{
-        hero: "Pagá con Visa en PedidosYa y ganá un viaje a New York a probar las mejores hamburguesas de Manhattan.",
+        hero: {
+          title:
+            "Pagá con Visa en PedidosYa y ganá un viaje a New York a probar las mejores hamburguesas de Manhattan.",
+          imageRegion: "Ar",
+        },
         travel: {
           title: "Ganate un viaje a Nueva York",
-          subtitle: {
-            firstLine: "a conocer las",
-            secondLine: "hamburgueserías mejores rankeadas",
-            thirdLine: "de Manhattan.",
-          },
+          subtitle: "y probá hamburguesas en Manhattan",
           bullets: [
-            "Vuelo ida y vuelta a New York para 2 personas.",
-            "4 noches en Hotel 4 estrellas.",
-            "Tour gastronómico por las mejores Hamburgueserías de Manhattan.",
-            "Excursiones diarias, y mucho más!",
+            "Viaje para 2 personas",
+            "Vuelos ida y vuelta a New York",
+            "6 noches de estadía en hotel 4 estrellas",
           ],
         },
         howToWin: {
@@ -33,15 +32,21 @@ const index = () => {
           },
           buttonTitle: "Empezá ya a sumar chances",
           opportunities: {
-            plusTen:
-              "¡Acelerá tus chances! Tus compras mayores a $7.500 suman más",
-            plusFive: {
-              firstLine: "Por tus compras en",
-              secondLine:
-                "Kioscos, Farmacias, Mascotas, Tiendas, Bebidas y Envíos",
+            span: "¡Acelerá tus chances!",
+            plusTen: {
+              numTitle: "chances",
+              text: "Tus compras mayores a $7.500 suman más",
             },
-            plusOne: "Por tus compras en Restaurantes dentro de  ",
+            plusFive: {
+              numTitle: "chances",
+              text: "Por tus pedidos en Mercados y tiendas",
+            },
+            plusOne: {
+              numTitle: "chance",
+              text: "Por tus compras en Restaurantes",
+            },
           },
+          link: "https://pwdh.adj.st/restaurantes/?adjust_t=84samxj_ec0dled&adjust_campaign=other__other_mix_eat_ma_fintech_visa&adjust_deeplink=pedidosya%3A%2F%2Fwww.pedidosya.com.ar/restaurantes/&adjust_fallback=https%3A%2F%2Fwww.pedidosya.com.ar%2Frestaurantes%2F%3F%26pycat%3Dother%26utm_source%3Dweb-referral%26utm_medium%3Dreferral%26utm_campaign%3Dother_other_mix_eat_ma_fintech_visa",
           appDownload: "Descargá la app",
         },
         footer: "Descargá la app",

@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 const Travel = ({ travelDict }) => {
   return (
@@ -9,13 +9,7 @@ const Travel = ({ travelDict }) => {
         <h2 className="font-texta-bold leading-[1em] pb-4">
           {travelDict.title}
         </h2>
-        <p className="text-2xl leading-[1em]">
-          {travelDict.subtitle.firstLine}{" "}
-          <span className="font-texta-bold">
-            {travelDict.subtitle.secondLine}{" "}
-          </span>{" "}
-          {travelDict.subtitle.thirdLine}
-        </p>
+        <p className="text-2xl leading-[1em]">{travelDict.subtitle}</p>
       </div>
       <div className="flex flex-col lg:flex-row justify-center py-8 items-center gap-4">
         <img
@@ -24,27 +18,27 @@ const Travel = ({ travelDict }) => {
           alt=""
         />
         <motion.div
-        
-        initial={{
-          transform: "translateX(+100%)",
-          opacity: 0,
-        }}
-        whileInView={{
-          transform: "translateX(0%)",
-          opacity: 1,
-          transition: {
-            duration: 1,
-            type: "tween",
-            damping: 25,
-            stiffness: 500,
-          },
-        }}
-        viewport={{ once: true }}
-        exit={{
-          transform: "translateX(0%)",
-          opacity: 1,
-        }}
-        className="flex flex-col gap-8">
+          initial={{
+            transform: "translateX(+100%)",
+            opacity: 0,
+          }}
+          whileInView={{
+            transform: "translateX(0%)",
+            opacity: 1,
+            transition: {
+              duration: 1,
+              type: "tween",
+              damping: 25,
+              stiffness: 500,
+            },
+          }}
+          viewport={{ once: true }}
+          exit={{
+            transform: "translateX(0%)",
+            opacity: 1,
+          }}
+          className="flex flex-col gap-8"
+        >
           <h3 className="lg:hidden text-peya-blue font-texta-bold text-4xl text-center lg:text-left pb-0 pt-2">
             Vas a poder disfrutar
           </h3>

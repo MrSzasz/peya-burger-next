@@ -24,21 +24,21 @@ const HowToWin = ({ howToWinDict }) => {
     show: { opacity: 1, transform: "translateY(0)" },
   };
 
-  useEffect(() => {
-    const popUp = document.querySelector("#popUp");
+  // useEffect(() => {
+  //   const popUp = document.querySelector("#popUp");
 
-    popUp.addEventListener("click", (e) => {
-      const dialogDimensions = popUp.getBoundingClientRect();
-      if (
-        e.clientX < dialogDimensions.left ||
-        e.clientX > dialogDimensions.right ||
-        e.clientY < dialogDimensions.top ||
-        e.clientY > dialogDimensions.bottom
-      ) {
-        popUp.close();
-      }
-    });
-  }, []);
+  //   popUp.addEventListener("click", (e) => {
+  //     const dialogDimensions = popUp.getBoundingClientRect();
+  //     if (
+  //       e.clientX < dialogDimensions.left ||
+  //       e.clientX > dialogDimensions.right ||
+  //       e.clientY < dialogDimensions.top ||
+  //       e.clientY > dialogDimensions.bottom
+  //     ) {
+  //       popUp.close();
+  //     }
+  //   });
+  // }, []);
 
   return (
     <motion.section
@@ -69,13 +69,13 @@ const HowToWin = ({ howToWinDict }) => {
             </h3>
             <p className="text-xl">{howToWinDict.subtitle}</p>
           </div>
-          <div className="text-center text-xl text-peya-white p-4 lg:p-8 bg-peya-blue flex flex-col gap-2">
+          <div className="text-center text-2xl text-peya-white p-4 lg:p-8 bg-peya-blue flex flex-col gap-2">
             <p>{howToWinDict.dates.firstLine}</p>
             <p className="font-texta-bold">{howToWinDict.dates.secondLine}</p>
           </div>
         </div>
-        <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-16 mb-28 lg:mb-20">
-          <p className="font-texta-bold text-2xl text-center lg:text-left">
+        <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-16">
+          <p className="text-2xl text-center lg:text-left">
             {howToWinDict.buttonTitle}
           </p>
           {/* <button
@@ -88,7 +88,7 @@ const HowToWin = ({ howToWinDict }) => {
             Pedir Ya
           </button> */}
           <a
-            href="https://www.google.com/"
+            href={howToWinDict.link}
             target="_blank"
             className="bg-peya-red transition-all hover:bg-peya-red-hover rounded-full px-10 py-2 font-bold text-peya-white"
           >
@@ -103,33 +103,30 @@ const HowToWin = ({ howToWinDict }) => {
           className="flex flex-col lg:flex-row justify-center gap-28 lg:gap-8"
         >
           <motion.div variants={item}>
-            <HowToWinCard num={10} text={howToWinDict.opportunities.plusTen} />
+            <HowToWinCard
+              num={10}
+              numTitle={howToWinDict.opportunities.plusTen.numTitle}
+              span={howToWinDict.opportunities.span}
+              text={howToWinDict.opportunities.plusTen.text}
+            />
           </motion.div>
           <motion.div variants={item}>
             <HowToWinCard
               num={5}
-              text={[
-                howToWinDict.opportunities.plusFive.firstLine,
-                <img
-                  className="h-6"
-                  src="/images/howToWin/pedidosYaMarketLogo.svg"
-                />,
-                howToWinDict.opportunities.plusFive.secondLine,
-              ]}
+              numTitle={howToWinDict.opportunities.plusFive.numTitle}
+              text={howToWinDict.opportunities.plusFive.text}
             />
           </motion.div>
           <motion.div variants={item}>
             <HowToWinCard
               num={1}
-              text={[
-                howToWinDict.opportunities.plusOne,
-                <img className="h-6" src="/images/hero/pedidosYaLogo.svg" />,
-              ]}
+              numTitle={howToWinDict.opportunities.plusOne.numTitle}
+              text={howToWinDict.opportunities.plusTen.text}
             />
           </motion.div>
         </motion.div>
       </div>
-      <dialog
+      {/* <dialog
         id="popUp"
         className="block  [&:not([open])]:opacity-0 transition-all duration-300 pointer-events-none open:pointer-events-auto open:opacity-100 w-fit h-fit p-8 rounded-peya inset-0"
       >
@@ -148,7 +145,7 @@ const HowToWin = ({ howToWinDict }) => {
             Cerrar
           </button>
         </div>
-      </dialog>
+      </dialog> */}
     </motion.section>
   );
 };

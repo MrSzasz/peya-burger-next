@@ -30,13 +30,13 @@ export default function Home() {
             <span class="fi fi-ar h-6 rounded-peya"></span>
             Argentina
           </Link>
-          <Link
+          {/* <Link
             href={"/cl"}
             className="flex justify-center items-center gap-2 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:-bottom-1 before:left-0 before:bg-white before:hover:scale-x-100 before:scale-x-0 before:origin-top-left before:transition before:ease-in-out before:duration-300"
           >
             <span class="fi fi-cl h-6 rounded-peya"></span>
             Chile
-          </Link>
+          </Link> */}
           <Link
             href={"/pe"}
             className="flex justify-center items-center gap-2 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:-bottom-1 before:left-0 before:bg-white before:hover:scale-x-100 before:scale-x-0 before:origin-top-left before:transition before:ease-in-out before:duration-300"
@@ -44,13 +44,13 @@ export default function Home() {
             <span class="fi fi-pe h-6 rounded-peya"></span>
             Perú
           </Link>
-          <Link
+          {/* <Link
             href={"/uy"}
             className="flex justify-center items-center gap-2 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:-bottom-1 before:left-0 before:bg-white before:hover:scale-x-100 before:scale-x-0 before:origin-top-left before:transition before:ease-in-out before:duration-300"
           >
             <span class="fi fi-uy h-6 rounded-peya"></span>
             Uruguay
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="flex justify-between items-center w-full px-4 lg:px-peya-x h-fit bg-peya-red py-8">
