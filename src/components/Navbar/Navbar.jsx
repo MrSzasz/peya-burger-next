@@ -33,17 +33,17 @@ const Navbar = ({ tyc }) => {
       <div className="flex justify-center items-center gap-2 lg:hidden">
         <img
           src="/images/navbar/pedidosYaPagosLogoMobile.svg"
-          className="w-28 lg:w-48 lg:hidden"
+          className="w-16 lg:w-48 lg:hidden"
           alt=""
         />
         |
         <img
           src="/images/navbar/visaLogo.svg"
-          className="w-18 lg:w-24"
+          className="w-14 lg:w-24"
           alt=""
         />
       </div>
-      <button className="lg:hidden text-4xl" onClick={toggleNav}>
+      <button className="lg:hidden text-2xl" onClick={toggleNav}>
         <AiOutlineMenu />
       </button>
       <div className="justify-center items-center gap-2 lg:gap-24 hidden lg:flex">
@@ -135,7 +135,7 @@ const Navbar = ({ tyc }) => {
       </ul>
       <dialog
         id="popUp"
-        className="block [&:not([open])]:opacity-0 transition-all duration-300 pointer-events-none open:pointer-events-auto open:opacity-100 lg:w-[75vw] h-[90vh] p-8 rounded-peya inset-0"
+        className="block [&:not([open])]:opacity-0 transition-all duration-300 pointer-events-none open:pointer-events-auto open:opacity-100 lg:w-[75vw] h-[90vh] p-4 pt-8 lg:p-8 rounded-peya inset-0"
       >
         <button
           onClick={() => {
@@ -147,10 +147,10 @@ const Navbar = ({ tyc }) => {
           X
         </button>
         <div className="grid grid-rows-main-page h-full gap-4">
-          <h2 className="text-peya-blue font-texta-bold text-4xl text-center pb-4">
+          <h2 className="text-peya-blue font-texta-bold text-2xl text-center pb-4">
             BASES Y CONDICIONES DE LA PROMOCIÓN <br /> “BURGER TRAVEL”
           </h2>
-          <p className="whitespace-pre-line leading-7 overflow-y-scroll colored-scrollbar">
+          <p className="whitespace-pre-line leading-7 text-sm overflow-y-scroll colored-scrollbar">
             {tyc}
           </p>
           <button

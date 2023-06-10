@@ -12,7 +12,7 @@ const Footer = ({ footerTitle }) => {
             }
             target="_blank"
           >
-            <img className="w-40 lg:w-48" src="/images/download/android.png" />
+            <img className="w-full lg:w-48" src="/images/download/android.png" />
           </a>
           <a
             href={
@@ -20,16 +20,16 @@ const Footer = ({ footerTitle }) => {
             }
             target="_blank"
           >
-            <img className="w-40 lg:w-48" src="/images/download/apple.png" />
+            <img className="w-full lg:w-48" src="/images/download/apple.png" />
           </a>
         </div>
       </div>
       <div className="flex justify-between items-center w-full">
         <img
           src="/images/download/pedidosYaPagosLogo.svg"
-          className="w-40 lg:w-48"
+          className="w-1/3 lg:w-48"
         />
-        <img src="/images/hero/pedidosYaLogo.svg" className="w-40 lg:w-48" />
+        <img src="/images/hero/pedidosYaLogo.svg" className="w-1/3 lg:w-48" />
       </div>
     </footer>
   );

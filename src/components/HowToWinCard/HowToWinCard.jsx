@@ -1,6 +1,6 @@
 const HowToWinCard = ({ num, text, span, numTitle }) => {
   return (
-    <div className="h-96 lg:w-64 lg:h-56 bg-peya-blue grid grid-rows-2 gap-8 text-peya-white p-16 lg:p-8">
+    <div className="h-96 lg:w-64 lg:h-56 bg-peya-blue grid grid-rows-2 gap-8 text-peya-white px-4 py-16 lg:py-8 lg:px-8">
       <div className="flex flex-col justify-center items-center">
         <p className="text-8xl lg:text-7xl font-texta-bold">
           <span className="text-peya-turquoise">+</span> <span>{num}</span>
