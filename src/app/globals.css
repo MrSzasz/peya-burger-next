@@ -2,6 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    @variants responsive {
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+    }
+}
+
+@layer utilities {
+    @variants responsive {
+
+        /* ===== Scrollbar CSS ===== */
+        /* Firefox */
+        .colored-scrollbar {
+            scrollbar-width: thin;
+            scrollbar-color: #004ADD #ffffff;
+        }
+
+        /* Chrome, Edge, and Safari */
+        .colored-scrollbar::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .colored-scrollbar::-webkit-scrollbar-track {
+            background: #ffffff;
+        }
+
+        .colored-scrollbar::-webkit-scrollbar-thumb {
+            background-color: #004ADD;
+            border-radius: 10px;
+            border: 3px none #ffffff;
+        }
+    }
+}
+
 @font-face {
     font-family: 'Texta';
     src: url('/fonts/TextaAlt-Regular.woff2') format('woff2'),

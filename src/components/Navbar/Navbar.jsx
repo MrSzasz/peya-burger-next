@@ -2,14 +2,31 @@
 
 import { AiOutlineMenu } from "react-icons/ai";
 import $ from "jquery";
+import { useEffect } from "react";
 
-const Navbar = () => {
+const Navbar = ({ tyc }) => {
   const toggleNav = () => {
     const hiddenNav = $("#hiddenNav");
     hiddenNav.slideToggle().css({
       display: "flex",
     });
   };
+
+  useEffect(() => {
+    const popUp = document.querySelector("#popUp");
+
+    popUp.addEventListener("click", (e) => {
+      const dialogDimensions = popUp.getBoundingClientRect();
+      if (
+        e.clientX < dialogDimensions.left ||
+        e.clientX > dialogDimensions.right ||
+        e.clientY < dialogDimensions.top ||
+        e.clientY > dialogDimensions.bottom
+      ) {
+        popUp.close();
+      }
+    });
+  }, []);
 
   return (
     <nav className="flex justify-between items-center p-6 px-4 text-white bg-peya-blue z-10 lg:h-16">
@@ -58,7 +75,14 @@ const Navbar = () => {
           before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
           before:transition before:ease-in-out before:duration-300"
           >
-            <a href="#">BASES Y CONDICIONES</a>
+            <button
+              onClick={() => {
+                const popUp = document.querySelector("#popUp");
+                popUp.showModal();
+              }}
+            >
+              BASES Y CONDICIONES
+            </button>
           </li>
         </ul>
       </div>
@@ -93,15 +117,53 @@ const Navbar = () => {
           <a href="#howToWinSection">¿CÓMO PARTICIPAR?</a>
         </li>
         <li
-          onClick={toggleNav}
           className="relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
               before:-bottom-1 before:left-0 before:bg-white
               before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
               before:transition before:ease-in-out before:duration-300"
         >
-          <a href="#">BASES Y CONDICIONES</a>
+          <button
+            onClick={() => {
+              toggleNav();
+              const popUp = document.querySelector("#popUp");
+              popUp.showModal();
+            }}
+          >
+            BASES Y CONDICIONES
+          </button>
         </li>
       </ul>
+      <dialog
+        id="popUp"
+        className="block [&:not([open])]:opacity-0 transition-all duration-300 pointer-events-none open:pointer-events-auto open:opacity-100 lg:w-[75vw] h-[90vh] p-8 rounded-peya inset-0"
+      >
+        <button
+          onClick={() => {
+            const popUp = document.querySelector("#popUp");
+            popUp.close();
+          }}
+          className="absolute right-6 top-4 text-xl font-texta-bold"
+        >
+          X
+        </button>
+        <div className="grid grid-rows-main-page h-full gap-4">
+          <h2 className="text-peya-blue font-texta-bold text-4xl text-center pb-4">
+            BASES Y CONDICIONES DE LA PROMOCIÓN <br /> “BURGER TRAVEL”
+          </h2>
+          <p className="whitespace-pre-line leading-7 overflow-y-scroll colored-scrollbar">
+            {tyc}
+          </p>
+          <button
+            onClick={() => {
+              const popUp = document.querySelector("#popUp");
+              popUp.close();
+            }}
+            className="bg-peya-blue w-fit mx-auto block transition-all hover:bg-peya-blue-hover rounded-full px-10 py-2 font-bold text-peya-white"
+          >
+            Cerrar
+          </button>
+        </div>
+      </dialog>
     </nav>
   );
 };

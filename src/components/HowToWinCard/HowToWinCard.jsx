@@ -8,7 +8,7 @@ const HowToWinCard = ({ num, text, span, numTitle }) => {
         <p className="text-3xl lg:text-xl">{numTitle}</p>
       </div>
       <div className="flex justify-center items-center text-center text-white">
-        <p className="text-xl lg:text-base px-6 lg:px-0 lg:leading-5 h-fit leading-5 flex flex-wrap justify-center gap-1 lg:gap-0">
+        <p className="text-2xl lg:text-base px-6 lg:px-0 lg:leading-5 h-fit leading-6 flex flex-wrap justify-center gap-1 lg:gap-0">
           {span && (
             <span className="text-peya-turquoise font-texta-bold">{span}</span>
           )}

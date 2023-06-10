@@ -8,7 +8,7 @@ import TutorialVideo from "../TutorialVideo/TutorialVideo";
 const MainBase = ({ dict }) => {
   return (
     <main className="font-texta">
-      <Navbar />
+      <Navbar tyc={dict.navbar}/>
       <Hero heroData={dict.hero} />
       <Travel travelDict={dict.travel} />
       {/* <TutorialVideo /> */}

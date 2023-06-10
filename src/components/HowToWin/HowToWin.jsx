@@ -90,7 +90,7 @@ const HowToWin = ({ howToWinDict }) => {
           <a
             href={howToWinDict.link}
             target="_blank"
-            className="bg-peya-red transition-all hover:bg-peya-red-hover rounded-full px-10 py-2 font-bold text-peya-white"
+            className="bg-peya-red transition-all text-xl lg:text-base hover:bg-peya-red-hover rounded-full px-10 py-2 font-bold text-peya-white"
           >
             Pedir Ya
           </a>
@@ -100,7 +100,7 @@ const HowToWin = ({ howToWinDict }) => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="flex flex-col lg:flex-row justify-center gap-28 lg:gap-8"
+          className="flex flex-col lg:flex-row justify-center gap-8 lg:gap-8"
         >
           <motion.div variants={item}>
             <HowToWinCard

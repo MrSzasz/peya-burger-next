@@ -30,7 +30,7 @@ const Hero = ({ heroData }) => {
         >
           <img
             src="/images/hero/title.svg"
-            className="w-[15em] lg:w-[25em] mx-auto lg:mx-0"
+            className="w-[20em] lg:w-[25em] mx-auto lg:mx-0"
           />
           <h2 className="font-texta-bold text-peya-blue text-2xl leading-6 text-center lg:text-left lg:w-[75%]">
             {heroData.title}
