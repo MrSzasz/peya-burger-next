@@ -11,7 +11,7 @@ const index = () => {
       dict={{
         hero: {
           title:
-            "En PedidosYa paga con Visa y gana un viaje a New York con Despegar, para probar hamburguesas en Manhattan.",
+            "En PedidosYa paga con Visa y gana un viaje a New York, para probar hamburguesas en Manhattan.",
           imageRegion: "Pe",
         },
         travel: {
@@ -20,7 +20,7 @@ const index = () => {
           bullets: [
             "Viaje para 2 personas",
             "Vuelos ida y regreso a New York",
-            "6 noches de estadía en hotel 4 estrellas",
+            "4 noches de estadía en hotel 4 estrellas",
           ],
         },
         howToWin: {

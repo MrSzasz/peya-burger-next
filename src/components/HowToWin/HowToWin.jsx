@@ -121,7 +121,7 @@ const HowToWin = ({ howToWinDict }) => {
             <HowToWinCard
               num={1}
               numTitle={howToWinDict.opportunities.plusOne.numTitle}
-              text={howToWinDict.opportunities.plusTen.text}
+              text={howToWinDict.opportunities.plusOne.text}
             />
           </motion.div>
         </motion.div>

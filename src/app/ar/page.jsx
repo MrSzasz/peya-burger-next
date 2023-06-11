@@ -85,7 +85,7 @@ const index = () => {
             span: "¡Acelerá tus chances!",
             plusTen: {
               numTitle: "chances",
-              text: "Tus compras mayores a $7.500 suman más",
+              text: "Tus pedidos mayores a $7.500 suman más",
             },
             plusFive: {
               numTitle: "chances",
@@ -93,7 +93,7 @@ const index = () => {
             },
             plusOne: {
               numTitle: "chance",
-              text: "Por tus compras en Restaurantes",
+              text: "Por tus pedidos en Restaurantes",
             },
           },
           link: "https://pwdh.adj.st/restaurantes/?adjust_t=84samxj_ec0dled&adjust_campaign=other__other_mix_eat_ma_fintech_visa&adjust_deeplink=pedidosya%3A%2F%2Fwww.pedidosya.com.ar/restaurantes/&adjust_fallback=https%3A%2F%2Fwww.pedidosya.com.ar%2Frestaurantes%2F%3F%26pycat%3Dother%26utm_source%3Dweb-referral%26utm_medium%3Dreferral%26utm_campaign%3Dother_other_mix_eat_ma_fintech_visa",
