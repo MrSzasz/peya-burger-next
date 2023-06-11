@@ -61,7 +61,7 @@ const index = () => {
         Toda relación que en virtud de la Promoción se genere entre los Participantes, 	Potenciales Ganadores, Ganadores y el Organizador, se regirá por las leyes aplicables según cada país. Para cualquier cuestión judicial que pudiera derivarse de la realización de la Promoción, se someterá a la jurisdicción de los tribunales competentes a elección del participante de acuerdo a la legislación vigente.`,
         hero: {
           title:
-            "Pagá con Visa en PedidosYa y ganá un viaje a New York a probar las mejores hamburguesas de Manhattan.",
+            "En PedidosYa pagá con Visa y ganá un viaje a New York con Despegar, para probar hamburguesas en Manhattan.",
           imageRegion: "Ar",
         },
         travel: {

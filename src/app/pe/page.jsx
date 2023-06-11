@@ -11,11 +11,11 @@ const index = () => {
       dict={{
         hero: {
           title:
-            "Paga con Visa en PedidosYa y gana un viaje a New York a probar las mejores hamburguesas de Manhattan.",
+            "En PedidosYa paga con Visa y gana un viaje a New York con Despegar, para probar hamburguesas en Manhattan.",
           imageRegion: "Pe",
         },
         travel: {
-          title: "Gánate un viaje a Nueva York",
+          title: "Gánate un viaje a New York",
           subtitle: "y prueba hamburguesas en Manhattan",
           bullets: [
             "Viaje para 2 personas",
