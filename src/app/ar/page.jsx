@@ -65,7 +65,7 @@ const index = () => {
           imageRegion: "Ar",
         },
         travel: {
-          title: "Ganate un viaje a Nueva York",
+          title: "Ganate un viaje a New York",
           subtitle: "y probá hamburguesas en Manhattan",
           bullets: [
             "Viaje para 2 personas",
