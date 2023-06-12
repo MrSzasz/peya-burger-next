@@ -8,12 +8,12 @@ import TutorialVideo from "../TutorialVideo/TutorialVideo";
 const MainBase = ({ dict }) => {
   return (
     <main className="font-texta">
-      <Navbar tyc={dict.navbar}/>
+      <Navbar tyc={dict.navbar} />
       <Hero heroData={dict.hero} />
       <Travel travelDict={dict.travel} />
       {/* <TutorialVideo /> */}
       <HowToWin howToWinDict={dict.howToWin} />
-      <Footer footerTitle={dict.footer} />
+      <Footer footerDict={dict.footer} />
     </main>
   );
 };

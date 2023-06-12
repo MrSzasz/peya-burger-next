@@ -1,25 +1,18 @@
-const Footer = ({ footerTitle }) => {
+const Footer = ({ footerDict }) => {
   return (
-    <footer className="bg-peya-red px-4 lg:px-peya-x py-8 lg:py-16 flex flex-col items-center justify-evenly gap-12 lg:gap-20 h-fit">
-      <div className="flex flex-col justify-center items-center gap-8">
+    <footer className="bg-peya-red px-4 lg:px-peya-x py-8 lg:py-12 flex flex-col items-center justify-evenly gap-12 lg:gap-20 h-fit">
+      <div className="flex lg:hidden flex-col justify-center items-center gap-8">
         <h3 className="font-texta-bold text-peya-white text-4xl tracking-wide">
-          {footerTitle}
+          {footerDict.footerTitle}
         </h3>
         <div className="flex justify-center items-center gap-4">
-          <a
-            href={
-              "https://play.google.com/store/apps/details?id=com.pedidosya&hl=es&referrer=pycat=retention&utm_medium=landing&utm_source=peya&utm_campaign=issuing&utm_content=download"
-            }
-            target="_blank"
-          >
-            <img className="w-full lg:w-48" src="/images/download/android.png" />
+          <a href={footerDict.footerDownloadAndroid} target="_blank">
+            <img
+              className="w-full lg:w-48"
+              src="/images/download/android.png"
+            />
           </a>
-          <a
-            href={
-              "https://itunes.apple.com/app/pedidosya/id490099807?utm_medium=landing&utm_source=peya&utm_campaign=issuing&utm_content=download"
-            }
-            target="_blank"
-          >
+          <a href={footerDict.footerDownloadApple} target="_blank">
             <img className="w-full lg:w-48" src="/images/download/apple.png" />
           </a>
         </div>

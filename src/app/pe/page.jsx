@@ -44,13 +44,19 @@ const index = () => {
             },
             plusOne: {
               numTitle: "oportunidad",
-              text: "Por tus pedidos en Mercados y tiendas",
+              text: "Por tus pedidos en Mercados y Tiendas",
             },
           },
           link: "https://pwdh.adj.st/?adjust_t=84samxj_ec0dled&adjust_campaign=other__other_mix_eat_ma_fintech_visa&adjust_deeplink=pedidosya%3A%2F%2Fwww.pedidosya.com.pe/&adjust_fallback=https%3A%2F%2Fwww.pedidosya.com.pe%2F%3F%26pycat%3Dother%26utm_source%3Dweb-referral%26utm_medium%3Dreferral%26utm_campaign%3Dother_other_mix_eat_ma_fintech_visa",
           appDownload: "Descarga la app",
         },
-        footer: "Descarga la app",
+        footer: {
+          footerTitle: "Descarga la app",
+          footerDownloadAndroid:
+            "https://play.google.com/store/apps/details?id=com.pedidosya&hl=es_AR&gl=US",
+          footerDownloadApple:
+            "https://apps.apple.com/cl/app/pedidosya-delivery-app/id490099807",
+        },
       }}
     />
   );

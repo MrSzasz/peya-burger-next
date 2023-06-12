@@ -135,7 +135,7 @@ const Navbar = ({ tyc }) => {
       </ul>
       <dialog
         id="popUp"
-        className="block [&:not([open])]:opacity-0 transition-all duration-300 pointer-events-none open:pointer-events-auto open:opacity-100 lg:w-[75vw] h-[90vh] p-4 pt-8 lg:p-8 rounded-peya inset-0"
+        className="block [&:not([open])]:opacity-0 transition-all duration-300 pointer-events-none open:pointer-events-auto open:opacity-100 lg:w-[75vw] h-[90vh] p-4 pt-8 lg:p-8 inset-0"
       >
         <button
           onClick={() => {

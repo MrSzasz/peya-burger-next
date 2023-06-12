@@ -61,7 +61,7 @@ const HowToWin = ({ howToWinDict }) => {
       id="howToWinSection"
       className="lg:px-peya-x p-4 w-full flex justify-center items-center overflow-y-hidden"
     >
-      <div className="w-full lg:w-fit shadow-peya-soft-blue rounded-peya flex flex-col px-4 lg:px-peya-x py-8 items-center gap-4 lg:gap-8">
+      <div className="w-full lg:w-fit shadow-peya-soft-blue flex flex-col px-4 lg:px-peya-x py-8 items-center gap-4 lg:gap-8">
         <div className="text-center flex flex-col items-center gap-4 lg:gap-8">
           <div className="flex flex-col gap-2">
             <h3 className="text-peya-blue font-texta-bold text-3xl lg:text-4xl">
@@ -100,7 +100,8 @@ const HowToWin = ({ howToWinDict }) => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="flex flex-col lg:flex-row justify-center gap-8 lg:gap-8"
+          // className="flex flex-col lg:flex-row justify-center gap-8 lg:gap-8"
+          className="grid w-full lg:grid-flow-col lg:items-stretch lg:flex-row lg:justify-center gap-8 lg:gap-8"
         >
           <motion.div variants={item}>
             <HowToWinCard
