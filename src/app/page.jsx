@@ -1,5 +1,16 @@
 import Link from "next/link";
 import "/node_modules/flag-icons/css/flag-icons.min.css";
+
+export const metadata = {
+  title: "Experiencias PedidosYa",
+  description: "Experiencias PedidosYa",
+  icons: {
+    icon: "/favicon.png",
+  },
+  keywords:
+    "Pagos, PedidosYa Pagos, PedidosYa, Visa, Visa Crédito, Crédito, pedidosya, pedidos, rápido, compra, tarjeta, visa, crédito, débito, beneficios, compras, descuentos, gana, premio, concurso, chances, supermercados, restaurantes, mercados, farmacias, tiendas, helados, mascotas, despegar, viajes, viajar, viaje, tour, new york, nueva york, manhattan, hamburguesa, burga, burger",
+};
+
 export default function Home() {
   return (
     <section className="min-h-screen grid grid-rows-main-page font-texta">

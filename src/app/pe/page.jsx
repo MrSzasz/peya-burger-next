@@ -3,6 +3,11 @@ import MainBase from "@/components/MainBase/MainBase";
 export const metadata = {
   title: "Viaja a New York | Perú",
   description: "En PedidosYa paga con Visa y gana",
+  icons: {
+    icon: '/favicon.png',
+  },
+  keywords: "Pagos, PedidosYa Pagos, PedidosYa, Visa, Visa Crédito, Crédito, pedidosya, pedidos, rápido, compra, tarjeta, visa, crédito, débito, beneficios, compras, descuentos, gana, premio, concurso, chances, supermercados, restaurantes, mercados, farmacias, tiendas, helados, mascotas, despegar, viajes, viajar, viaje, tour, new york, nueva york, manhattan, hamburguesa, burga, burger"
+
 };
 
 const index = () => {
