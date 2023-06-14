@@ -29,7 +29,7 @@ const Hero = ({ heroData }) => {
           className="lg:w-[35%] h-[75%] flex flex-col gap-4 p-4 lg:pt-16"
         >
           <img
-            src="/images/hero/title.svg"
+            src={`/images/hero/title${heroData.imageRegion}.svg`}
             className="w-[90%] lg:w-[25em] mx-auto lg:mx-0"
           />
           <h2 className="font-texta-bold text-peya-blue text-xl leading-6 text-center lg:text-left lg:w-[75%]">
