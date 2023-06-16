@@ -48,7 +48,7 @@ const Travel = ({ travelDict }) => {
             </h3>
             {travelDict.bullets.map((bullet, i) => (
               <li
-                className="text-2xl lg:text-xl lg:ml-14 w-[75%] lg:w-full mx-auto"
+                className="text-2xl lg:text-xl lg:list-inside w-[75%] lg:w-full mx-auto"
                 key={i}
               >
                 {bullet}

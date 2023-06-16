@@ -1,13 +1,13 @@
 import MainBase from "@/components/MainBase/MainBase";
 
 export const metadata = {
-  title: "Viaja a New York | Perú",
+  title: "Viaja a Nueva York | Perú",
   description: "En PedidosYa paga con Visa y gana",
   icons: {
-    icon: '/favicon.png',
+    icon: "/favicon.png",
   },
-  keywords: "Pagos, PedidosYa Pagos, PedidosYa, Visa, Visa Crédito, Crédito, pedidosya, pedidos, rápido, compra, tarjeta, visa, crédito, débito, beneficios, compras, descuentos, gana, premio, concurso, chances, supermercados, restaurantes, mercados, farmacias, tiendas, helados, mascotas, despegar, viajes, viajar, viaje, tour, new york, nueva york, manhattan, hamburguesa, burga, burger"
-
+  keywords:
+    "Pagos, PedidosYa Pagos, PedidosYa, Visa, Visa Crédito, Crédito, pedidosya, pedidos, rápido, compra, tarjeta, visa, crédito, débito, beneficios, compras, descuentos, gana, premio, concurso, oportunidades, supermercados, restaurantes, mercados, farmacias, tiendas, helados, mascotas, viajes, viajar, viaje, tour, new york, nueva york, manhattan, hamburguesa, burger",
 };
 
 const index = () => {
@@ -20,11 +20,11 @@ const index = () => {
           imageRegion: "Pe",
         },
         travel: {
-          title: "Gánate un viaje a New York",
+          title: "Gánate un viaje a Nueva York",
           subtitle: "y prueba hamburguesas en Manhattan",
           bullets: [
             "Viaje para 2 personas",
-            "Vuelos ida y regreso a New York",
+            "Vuelos ida y regreso a Nueva York",
             "4 noches de estadía en hotel 4 estrellas",
           ],
         },
