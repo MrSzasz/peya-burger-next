@@ -97,7 +97,7 @@ Toda relación que en virtud de la Promoción se genere entre los Participantes,
           subtitle: "Y empezá a viajar antes de viajar",
           dates: {
             firstLine: "Acumulá chances desde el 10/7 hasta 31/8",
-            secondLine: "El sorteo se realizará el 3 de agosto de 2023",
+            secondLine: "El sorteo se realizará el 3 de septiembre de 2023",
           },
           buttonTitle: "Empezá ya a sumar chances",
           opportunities: {
