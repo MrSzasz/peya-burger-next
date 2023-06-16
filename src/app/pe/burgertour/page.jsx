@@ -16,7 +16,7 @@ const index = () => {
       dict={{
         hero: {
           title:
-            "En PedidosYa paga con Visa y gana un viaje a New York, para probar hamburguesas en Manhattan.",
+            "En PedidosYa paga con Visa y gana un viaje a Nueva York, para probar hamburguesas en Manhattan.",
           imageRegion: "Pe",
         },
         travel: {
@@ -33,7 +33,7 @@ const index = () => {
           subtitle: "Y empieza a viajar antes de viajar",
           dates: {
             firstLine:
-              "Acumula oportunidades desde el 13/6/2023 hasta el 31/7/2023",
+              "Acumula oportunidades desde el 16/6/2023 hasta el 31/7/2023",
             secondLine: "El sorteo se realizará el 3/8/2023",
           },
           buttonTitle: "Empieza ya a sumar oportunidades",
