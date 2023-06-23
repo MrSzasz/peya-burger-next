@@ -131,7 +131,7 @@ const index = () => {
               text: "Por tus pedidos en Restaurantes",
             },
           },
-          link: "https://pwdh.adj.st/?adjust_t=84samxj_ec0dled&adjust_campaign=other__other_mix_eat_ma_fintech_visa&adjust_deeplink=pedidosya%3A%2F%2Fwww.pedidosya.com.pe/&adjust_fallback=https%3A%2F%2Fwww.pedidosya.com.pe%2F%3F%26pycat%3Dother%26utm_source%3Dweb-referral%26utm_medium%3Dreferral%26utm_campaign%3Dother_other_mix_eat_ma_fintech_visa_pe",
+          link: "https://pwdh.adj.st/?adjust_t=84samxj_ec0dled&adjust_campaign=other__other_mix_eat_ma_fintech_visa_cl&adjust_deeplink=pedidosya%3A%2F%2Fwww.pedidosya.cl/&adjust_fallback=https%3A%2F%2Fwww.pedidosya.cl%2F%3F%26pycat%3Dother%26utm_source%3Dweb-referral%26utm_medium%3Dreferral%26utm_campaign%3Dother_other_mix_eat_ma_fintech_visa_cl",
           appDownload: "Descarga la app",
         },
         footer: {
