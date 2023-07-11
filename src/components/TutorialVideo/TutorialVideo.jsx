@@ -1,4 +1,4 @@
-const TutorialVideo = () => {
+const TutorialVideo = ({videoID}) => {
   return (
     <section className="lg:px-peya-x p-4">
       <div>
@@ -6,7 +6,7 @@ const TutorialVideo = () => {
           <iframe
             width="853"
             height="480"
-            src={`https://www.youtube.com/embed/AyOOFLsE9wI`}
+            src={`https://www.youtube.com/embed/${videoID}`}
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

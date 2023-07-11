@@ -11,7 +11,7 @@ const MainBase = ({ dict }) => {
       <Navbar tyc={dict.navbar} />
       <Hero heroData={dict.hero} />
       <Travel travelDict={dict.travel} />
-      {/* <TutorialVideo /> */}
+      {dict.video && <TutorialVideo videoID={dict.video} />}
       <HowToWin howToWinDict={dict.howToWin} />
       <Footer footerDict={dict.footer} />
     </main>
