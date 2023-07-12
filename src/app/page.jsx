@@ -34,13 +34,13 @@ export default function Home() {
       </div>
       <div className="px-peya-x py-8">
         <div className="flex flex-col lg:flex-row justify-evenly px-peya-x py-8 text-4xl items-center flex-wrap text-peya-white font-texta-bold bg-peya-blue h-full lg:gap-12">
-          <Link
+          {/* <Link
             href={"/ar/burgertour"}
             className="flex justify-center items-center gap-2 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:-bottom-1 before:left-0 before:bg-white before:hover:scale-x-100 before:scale-x-0 before:origin-top-left before:transition before:ease-in-out before:duration-300"
           >
             <span class="fi fi-ar h-6 rounded-peya"></span>
             Argentina
-          </Link>
+          </Link> */}
           <Link
             href={"/cl/burgertour"}
             className="flex justify-center items-center gap-2 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] before:-bottom-1 before:left-0 before:bg-white before:hover:scale-x-100 before:scale-x-0 before:origin-top-left before:transition before:ease-in-out before:duration-300"
