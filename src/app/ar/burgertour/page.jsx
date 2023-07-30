@@ -83,8 +83,8 @@ const index = () => {
           title: "En PedidosYa pagá con Visa",
           subtitle: "Y empezá a viajar antes de viajar",
           dates: {
-            firstLine: "Acumulá chances desde el 21/6 hasta 31/7",
-            secondLine: "El sorteo se realizará el 3 de agosto de 2023",
+            firstLine: "Acumulá chances desde el 23/6 hasta 14/8",
+            secondLine: "El sorteo se realizará el 17 de agosto de 2023",
           },
           buttonTitle: "Empezá ya a sumar chances",
           opportunities: {
