@@ -95,7 +95,7 @@ const index = () => {
             plusTen: {
               numTitle: "oportunidades",
               text: "Tus pedidos mayores a s/40 suman más",
-            },
+            }, 
             plusFive: {
               numTitle: "oportunidades",
               text: "Por tus pedidos en Restaurantes",
