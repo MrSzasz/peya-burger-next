@@ -99,6 +99,7 @@ const index = () => {
             "4 noches de estadía en hotel 4 estrellas",
           ],
         },
+        video:"kasng7JgKjc",
         howToWin: {
           title: "En PedidosYa pagá con Visa",
           subtitle: "Y empezá a viajar antes de viajar",
