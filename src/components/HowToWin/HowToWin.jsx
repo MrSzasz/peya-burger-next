@@ -3,8 +3,11 @@
 import { useEffect } from "react";
 import HowToWinCard from "../HowToWinCard/HowToWinCard";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
 
 const HowToWin = ({ howToWinDict }) => {
+  const pathname = usePathname();
+
   const container = {
     hidden: { opacity: 0 },
     show: {
@@ -126,6 +129,12 @@ const HowToWin = ({ howToWinDict }) => {
             />
           </motion.div>
         </motion.div>
+        {pathname.split("/")[1] == "uy" && (
+          <p>
+            Para poder participar de esta promoción deberás contar con tu Visa
+            de turismo de Estados Unidos vigente
+          </p>
+        )}
       </div>
       {/* <dialog
         id="popUp"
