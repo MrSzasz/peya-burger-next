@@ -14,11 +14,11 @@ const index = () => {
   return (
     <MainBase
       dict={{
-        navbar: `ESTA PROMOCIÓN SÓLO ES VÁLIDA EN REPÚBLICA DOMINICANA
+        navbar: `ESTA PROMOCIÓN SÓLO ES VÁLIDA EN REPÚLICA DOMINICANA
         "Registrado por Pro-Consumidor bajo el No. CRS-0472/2023
         Bases Legales Promoción
         
-        1. DESCRIPCIÓN:  La promoción “Burger Tour” (Recorrido de la Hamburguesa), es organizado por Delivery Hero República Dominicana, S.R.L. (en lo adelante “PedidosYa” o el “Organizador”) y tiene por objeto premiar la fidelidad de nuestros clientes en todo el territorio de la República Dominicana (el Territorio) y será realizada entre el primero (1ro.) de agosto del 2023 hasta el cuatro (4) de septiembre del 2023 (Período de Vigencia).
+        1. DESCRIPCIÓN:  La promoción “Burger Tour” (Recorrido de la Hamburguesa), es organizado por Delivery Hero República Dominicana, S.R.L. (en lo adelante “PedidosYa” o el “Organizador”) y tiene por objeto premiar la fidelidad de nuestros clientes en todo el territorio de la República Dominicana (el Territorio) y será realizada entre el primero (1ro.) de agosto del 2023 hasta el quince (15) de septiembre del 2023 (Período de Vigencia).
         2. REQUISITOS PARA PARTICIPAR: Podrán participar en la promoción los usuarios de PedidosYa, que sean personas físicas mayores de 18 años de edad, que tengan una cuenta en el Portal de PedidosYa (página web pedidosya.com.do o la Aplicación) de PedidosYa (el Portal), se encuentren logueados, con domicilio y residencia en el Territorio (los Participantes) y que cumplan con el mecanismo de participación indicado en estas Bases. 
         2.1 Exclusiones: No podrán participar en la promoción las personas físicas menores de 18 años, las personas jurídicas, los empleados o directivos de PedidosYa, ni demás personas que PedidosYa contrate para proveer cualquier producto o cualquier servicio relacionado con la promoción, ni tampoco los cónyuges y los parientes por consanguinidad o afinidad hasta el segundo grado inclusive de cualquiera de los anteriores mencionados, sea que lo hagan en nombre propio o por cuenta y orden de terceros.
         3. MECÁNICA:  Los Participantes deben realizar los siguientes pasos: (i) Ingresar con su usuario de PedidosYa al Portal. En caso de no contar con un usuario en “PedidosYa”, el Participante deberá registrarse y crear un usuario en el Portal. (ii) Realizar una compra efectiva con pedido confirmado en el Portal en los locales adheridos al concurso (en adelante los “Locales Participantes”), pagando con tarjeta de débito, crédito o prepago marca VISA (la Marca Auspiciadora). Los Locales Participantes son aquellos comercios adheridos al Portal de PedidosYa durante el Plazo de Vigencia en las secciones Restaurantes y Mercados; y, (iii) Con cada compra en los Locales Participantes, el Participante sumará oportunidades de ganar: 
@@ -28,7 +28,7 @@ const index = () => {
         3.1 Para todos los efectos de estas Bases, queda entendido que “Compra Efectiva”, significa compra confirmada, no cancelada, sin devolución o solicitud de devolución, y el pedido entregado al usuario. Las compras que no cumplan con las condiciones para ser calificadas como efectivas no sumarán oportunidades para el usuario. 
         3.4 Las oportunidades indicadas son acumulables sin importar el monto de la Compra Efectiva.
         4. SELECCIÓN DE POTENCIAL GANADOR:
-        4.1. El Organizador conformará una base de datos con todas las oportunidades acumuladas por los participantes a lo largo del Plazo de Vigencia y realizará un sorteo para escoger al Potencial Ganador, el día seis (6) de septiembre de 2023 a las 4:00 pm., en el domicilio del Organizador, mediante un sistema aleatorio (en adelante, el “Sorteo”).
+        4.1. El Organizador conformará una base de datos con todas las oportunidades acumuladas por los participantes a lo largo del Plazo de Vigencia y realizará un sorteo para escoger al Potencial Ganador, el día veinte (20) de septiembre de 2023 a las 4:00 pm., en el domicilio del Organizador, mediante un sistema aleatorio (en adelante, el “Sorteo”).
         4.2. En el Sorteo será seleccionado un (01) ganador (en adelante, “Potencial Ganador”), y diez (10) potenciales ganadores alternos (en adelante los “Potenciales Ganadores Alternos”), para el caso de que quién resulte Potencial Ganador en primer término, no cumpliera con los requisitos de asignación establecidos en las presentes Bases. Los Potenciales Ganadores Alternos tendrán un orden de prelación que corresponderá al orden en el que salieron sorteados.
         4.3 Una vez seleccionado el Potencial Ganador, será contactado por el Organizador dentro del plazo de siete (7) días contados a partir de haber sido realizado el Sorteo, a través del envío de un correo electrónico, a la dirección de correo electrónico que tiene registrado el Potencial Ganador en el Portal. El Potencial Ganador tendrá un plazo de veinticuatro (24) horas desde la recepción del mail para manifestar su aceptación al Premio, de no ser así el Premio se transferirá al Potencial Ganador Alterno.
         5. PREMIO:
@@ -76,8 +76,8 @@ const index = () => {
           subtitle: "Y empieza a viajar antes de viajar",
           dates: {
             firstLine:
-              "Acumula oportunidades desde el 1/8/2023 hasta el 4/9/2023",
-            secondLine: "El sorteo se realizará el 6/9/2023",
+              "Acumula oportunidades desde el 1/8/2023 hasta el 15/9/2023",
+            secondLine: "El sorteo se realizará el 20/9/2023",
           },
           buttonTitle: "Empieza ya a sumar oportunidades",
           opportunities: {
