@@ -84,7 +84,7 @@ const index = () => {
             span: "¡Acelera tus oportunidades!",
             plusTen: {
               numTitle: "oportunidades",
-              text: "Tus pedidos mayores a $800 suman más",
+              text: "Tus pedidos mayores a $800 suman más", 
             },
             plusFive: {
               numTitle: "oportunidades",
